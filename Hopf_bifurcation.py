@@ -164,6 +164,6 @@ plt.legend(fontsize=12,loc=1)
 
 plt.show();
 #if a < 0:
-#    fig.savefig(r'C:\Users\fespi\OneDrive\Desktop\2020\Aux2\P1An.png',dpi = 300,bbox_inches='tight')
+#    fig.savefig('./images/RK_p1.pdf',dpi = 300,bbox_inches='tight')
 #else:
-#    fig.savefig(r'C:\Users\fespi\OneDrive\Desktop\2020\Aux2\P1Ap.png',dpi = 300,bbox_inches='tight')
+#    fig.savefig('./images/RK_p1.pdf',dpi = 300,bbox_inches='tight')
