@@ -1,6 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 from mpl_toolkits import mplot3d
+import os
 
 def fx(t,x,y):
     xt = a*x + y - x*(x**2 + y**2)
@@ -128,6 +129,9 @@ elif MCo == 2 :
     phi0 = float(input("Value of phi0: "))
     x0 = r0*np.cos(phi0)
     y0 = r0*np.sin(phi0)
+
+if not os.path.exists('./images/'):
+    os.makedirs('./images/')
 
 t2 = np.linspace(0,tf,n+1);
 xrk2c,yrk2c = RK2c(fx,fy,tf,x0,y0,n)
