@@ -3,8 +3,10 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
+# Defining functions
 def fun(x,y):
-    yder = x**2 - 3*y  # y' = x^2 - 3*y
+    # y' = x^2 - 3*y
+    yder = x**2 - 3*y
     return yder
 
 def Euler(f,a,b,y0,n):
@@ -43,8 +45,7 @@ def RK4(f,a,b,y0,n):
     yrk4 = y
     return yrk4
         
-#%%
-   
+# Running the program 
 a = float(input("Bottom value: "))
 b = float(input("Top value: "))
 n = int(input("Number of divisions: "))
